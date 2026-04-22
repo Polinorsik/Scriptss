@@ -1,0 +1,320 @@
+Щgame
+RunService
+GetService	HeartbeatwaitB	WorkspaceRaynew
+FindPartOnRayTransparencyNameHandleEffectBulletLaserstringlowerwaterRailArrowParentHumanoidFindFirstChildHealthTEAMValuel	magnitude	workspace
+CurrentCameraViewportPointToRayOrigin	DirectionCFrameAnglesmathrandomrad
+lookVectorbCameraShakingEnabled	IntensityMouseSensitiveCoordinateFramepFocusfromEulerAnglesXYZaTorsoZombieIsA
+FireServerPiercingscript
+BoltScriptDisabledFireAnimationSpeedPlaySpreadSpreadRedutionHit
+PlayerScriptsIsMobileViewportSizeXYExplosiveEnabledInstance	ExplosionRadius
+BlastRadius
+BlastPressurePosition connectBulletVisualizerScript	VisualizeMuzzleOffset
+BulletSpeed
+BulletSize
+BulletColorBulletTransparencyBulletMaterialFadeTimeVisualizerEnabledFireReplicatedStorageVisualizeBulletdLimitedClipEnabled
+AmmoPerClip
+FieldOfViewScope Visible Players
+LocalPlayerEnum
+CameraMode ClassicMouse Sensitivity
+rbxassetid://
+MouseIconIDIcons
+ShotgunReloadShotgunClipinAnimationSpeed
+ShopgunClipinShellClipinSpeedReloadAnimationSpeed
+ReloadSoundReloadBoltScript
+ReloadTimekFrameAmmoFillUDim2EasingDirectionOut
+EasingStyleQuintTweenSizeAndPositionClips MaxClip CurrentTextMax	Reloading
+NoMoreClipSizeChargedShotEnabled
+ChargeSoundChargingTimeMinigunEnabledWindUpDelayBeforeFiringBurstFireEnabledBulletPerBurstSpawnShotgunEnabled
+BulletPerShot	BurstRate
+DualEnabledFireRateAuto	FireSound PlayingLoopedStopWindDownDelayAfterFiringgfUserInputStateBeginEnd_re
+SniperEnabledLockFirstPerson(http://www.roblox.com/asset?id=187746799Shoot KeyCodeButtonL1ButtonR1
+BindActionrbxassetid://3319681178SetImage
+SetPositionReloadButtonL2ButtonR2rbxassetid://6433106861	PlayerGuiIdleAnimationSpeed KeyDownFilteringEnabled
+CanCollideLeft Arm	Right Arm	RightGripWaitForChildCloneLeftGripPart0Part1UnbindAction DestroyGetMouseContextActionServiceUserInputServiceGunSound require SettingGunScript_ServerChangeAmmoAndClip
+InflictTargetGunGUI Handle2error3"Dual" setting is enabled but "Handle2" is missing!IdleAnimationIDIdleAnim
+LoadAnimationFireAnimationIDFireAnimReloadAnimationID
+ReloadAnimShotgunClipinAnimationIDShotgunClipinAnim
+Button1Down	Button1Up
+OnClientEventEquipped
+UnequippedDied     +G      Њ  ¤    @o ј   џMэ   ј—   џC`     ¤    @o ј   џMэ   ј—   џCH ся‚  ¤    @o ј   џMэ   ј—   џ‚     @                                                
+   x¤    @MК   ¤  0ЂR   	џR  јн   џi MЩ    o  · X    Mє	   рT 
+   Mє	   рP 
+   Mє	   рL    Mє	   рH 
+   ¤  <аЂM є	   џрA    Mє	   р=    Mє	   р9    M$   o ј   џ M$   M   MZ   
+*    M$   o ј   џ M$   o ј   џ
+ ¤   ђA
+ M$   Mx   Mм   ¤   lђЃс     M$   o ј   џ ы   M$   M   ‡ 
+ 5 Ќ   [C R &
+ M
+
+К   &	
+R
+ џR R  ‚     @ 	 0Ђ
+
+      и?
+ <аЂ          ђA lђЃ{®Gбz„?                                                                                                                                і¤    @MH   R   R јF   џ¤    @¤  @ЂM	C    M
+a	   [
+
+џR	 јн
+   џ¤	  °ЂM
+C    R
+  џ	¤
+  4°Ђ9
+ ¤  @рЂџ[	C
+»¤
+  LрЂџ
+9 ¤  @рЂџ[	C
+»
+¤  LрЂџЊ
+  џ
+		
+MH   ¤	    @¤
+  @ЂMC    [
+џ
+R ј		н
+   џ		k M
+	Щ   o ·X 
+   M
+	є   р
+T    M
+	є   р
+P    M
+	є   р
+L    M
+	є   р
+H    ¤
+  xРЃM	є   џ
+р
+A     M
+	є   р
+= !   M
+	є   р
+9 "   M
+	$#   o
+$ ј
+
+%   џ
+
+ M
+	$#   M
+
+$   M
+
+Z&   
+
+* '   M
+	$#   o
+$ ј
+
+%   џ
+
+ M
+	$#   o
+( ј
+
+%   џ
+
+
+ ¤
+)   ЂB
+
+ M
+	$#   M
+
+x(   M
+
+м*   ¤+  ЁЂ‚с
+    M
+	$#   o
+$ ј
+
+%   џ
+
+ ы  M
+	$#   M
+
+$   ‡
+
+
+ 5
+ Ќ,   [
+-C
+
+R
+ MC    &
+MК.   хR џ
+R	
+ R
+ ‚	 /   @ 	 @Ђ!     €і@"
+# °Ђ$ 4°Ђ%& @рЂ       @' LрЂ(
+      и?
+ xРЃ          ЂB ЁЂ‚{®Gбz„? )                                                                                                                                                                                           Vы   M  У     Q ы  MR   ы  ы  M
+   + Њ м Њ Њ
+ Њ ЁB ы MЄ   ы MЄ   M‘   &ы MЄ   M‘   ы  M  Л   M  ‘   & MК   ¤	   pЂы	 M		Л   M		‘   џ	 ¤
+  (pЂ9
+  ¤
+  8РЂџ
+[ 	
+C
+
+>	
+9  ¤  8РЂџ[ 	
+C
+
+>
+
+Њ
+  џ	 ы  ¤		   pЂЊ
+  Њ
+  R џ			0 Є   5  c   џ ‹ѕя‚  *+,-./#	  pЂ0 (pЂ      Y@%& 8РЂ       @ 1                                                                                          
+   + ) M $    & M є   р#   ЂM $    o ј   џM $    o ј   џ o јю   џ MZ    Њ  `    
+ ы  M є   R R  ы ы	 јk   џ ‚  	2345                                                 
+   Цы  M[    я      Ю ¤   @M>   ©  0ў   ы 	 ы Ж  Ж  ы  Mа   јо   џы M…    M…   ¤
+  $ЂЂЊ  o
+ Њ   џ	M‘   ы  M
+   ы  ы  M   х+ Њ 	¤
+  $ЂЂR ы  M  ы   M  ‘   џ¤  DЂЂ9	 ¤
+  P0Ѓџ
+[	
+
+C	
+»¤   \0Ѓџ 9
+ ¤  P0Ѓџ[
+	
+
+C	
+
+»	¤  \0ЃџЊ	  џ	MH   Њ  }ы    Ж  Ж  ы  M  ё   M  Г   M  м   * 
+    Ђ5  Ќ   R R	 Њ
+€ы
+  џ R  R e  5  ѓ   ¤	    рAM		H!   M		°"   M		y#   >	¤
+    рAM
+
+H!   M
+
+°"   M
+
+x%   >
+
+[	
+$R
+ R
+ ы  џ R  R ы   M  q&   + , I M $'    F M $'   o	( ј  )   џ M$'   o
+  ј)   џ  o
+* ј	 ю+   џ		 M	 Z,   Њ
+  `
+ 	    ы	 M
+є-   R  R
+ ы	 R ј		k.   џ	 ы	 ©
+ j
+	 e   Њ  e  ¤ 0  $р‚o1 џ ы  Mq2   0 r3   Њ  0 ±4   0 ;5   ¤7   `CMH!   0 $'   M ы   Щ
+   	   јз8   џЊ   x +  Њ яяR  ы  M  ё   M  г9   M  ‚:   Ж	  R
+  ы
+  M
+
+њ;   R я
+     ы  Mq&   ы  Mr3   ы  M±4   Е
+   я     ы  MҐ<   ы  MW=   ы  Mд>   ы  Mr?   ы  M3@   ы  M•A   Е    ©  
+ B  Ђы  MoC   + ©  ј  ЭD   џ 
+¤ F   PDM  ?G   M  ~H   R	  ы
+  M
+
+њ;   R
+ я     ы
+  M
+
+q&   ы  Mr3   ы  M±4   Е
+   я
+     ы  MҐ<   ы  MW=   ы  Mд>   ы  Mr?   ы  M3@   ы  M•A   Е
+    © 
+ B  Ђы  MoC   + ©  ј  k.   џ 	[ IC H я‚  J67  @89:;2#	 $ЂЂ      ш?.<      р?=>$ DЂЂ%& P0Ѓ       @' \0Ѓ(?@)  рAABљ™™™™™й?CD345E $р‚FGHIJ   `CKLMNOPQRST      рїUV  PDWX{®Gбz„?Y                                                                                                                                                                                                                                                                                                                                                           
+   љы    — ы  + • ы  Њ  ·     ы  M  Ъ    + Ќ ы  ы MR   ` €    ©  Ю  ы   ( ¤     @M  H   ЊF 0 a   ы  M  ф   ©  0 Ђ    ¤ 	   Ђ@M  P
+   M  1
+   ¤ 4АА0 Ј
+   ¤   AM З   © 0 ў   ©   Ю  ы   o ы M   s0 ®   5  ’   џ ы  M  О      Њ ы MR   ы & Њ Ё  ы 	 ы Ж  Ж  ы  M  V   јо   џы	 ы
+ o јk   џ5 c   ы MC   џ‹ ияы 
+  	 ы 
+ Ж  Ж  ы M    ј  о   џ ы 	 ы
+ o  ј  k   џ ¤    AM  !   ©  0 ў   5  c   ы Mј"   џ ы  M  Ъ      ы x #Ю  ы  M  R   Ю  ы  ы ы ј  k   џ ©   Ю  5  ’   џ ‚  $Z[    @\]^  Ђ@_`abc4ААd7  A9efghij;k5lmnop      р? q                                                                                                                                                                  •ы   M  ќ    M  …   M  o   ¤  0Ђы ы MR   мЊ  Њ Њ  џ¤  0ЂЊ  Њ  Њ  Њ   џ¤
+ 	 pА¤
+ ,pАo ©  ј     џ ы   M  ќ    M     M  o   ¤  0Ђы ы MЃ   мЊ  Њ Њ  џ¤  0ЂЊ  Њ  Њ  Њ   џ¤
+ 	 pА¤
+ ,pАo ©  ј     џ ы   M  ќ    M  …   M  Ѓ   ы 0 х   ы   M  ќ    M  …   M  ґ   ы MR   0 х   ы   M  ќ    M     M  Ѓ   ы 0 х   ы   M  ќ    M     M  ґ   ы MЃ   0 х   ы   M  ќ    M  …   M  Ѓ   ы V 0 Ђ   ы   M  ќ    M  …   M  ґ   ы V 0 Ђ   ы   M  ќ    M  …   M  ќ    ы V 0 Ђ   ы   M  ќ    M  …   M  Ж   ы 0 Ђ   ы   M  ќ    M     M  Ѓ   ы Њ  Ф    © © V 0 Ђ   ы   M  ќ    M     M  ґ   ы Њ  Ф    © © V 0 Ђ   ы   M  ќ    M     M  ќ    ы Њ  Ф    © © V 0 Ђ   ы   M  ќ    M     M  «   ы Њ  Ф    © © 0 Ђ   ы   M  ќ    M     ы MЪ   0 Ђ   ы   M  ќ    ы MЪ    ¤  0ЂЊ  Њъ Њ  Њd џ+  ¤  0ЂЊ  Њъ Њ  Њ7 џ0 /   ы   M  ќ    ы MЪ    ¤  0ЂЊ ЊьюЊ Њ’яџ+  ¤  0ЂЊ ЊьюЊ Њїяџ0 ;   ‚  rstu	 0Ђ[avw	 pАxy,pА      Р?z{|}~^ЂЃZ‚J h                                                                                                                                                                                                                                                                                         	    Ь©  Ю   ©   ы Ц ы Ф ы  Т ы +Р ы Њ  `Н    ы MZ    Њ  `З    ©  Ю ы MW    ы  o ј   џ ы ы	 o јk   џ5 c   ы Mў   џ©  ы M=     ы  o ј   џ ы ы	 o јk   џ5 c   ы MЛ	   џы d ы +b ы  +  _ ы Њ  `\    ы MZ    Њ  `V    ©   Њ ы MЫ
+    ы MW
+   + Њ Њ Ё1 ¤
+   А@5 Ђ   џЊ ы  M  .     ы M©   + Њ Њ Ё 5  …   ы  џ ‹ыяы xЮ ы
+ ы ы 
+ јk   џ5 ’   џы MЫ
+    5 c   ы Mъ   џы Њ  Ф    ‹Пяы  ы љ     ы Me    ы
+ + ы Ю  5 c   ы MG   џы M’    H љяы  Mb   MO    ы  Mb   Mµ    ы  Mb   јъ   џы M=     ы  o ј   џ ы ы	 o јk   џ5 c   ы Mќ   џ© Ю ы Њ  }    5 Љ   џ‚  ѓ„5…†‡€‰Љ‹  А@1ЊЌY      р?hЋЏђ‘’“”•–—q                                                                                                                                                                                                                                     ©   Ю   ‚    ™           
+ы   M  ё    M  Г   M  м   *     Ђ5  †   џ ‚  ?@                       
+ы   M  ё    M  Г   M  м   *     Ђ5  ‡   џ ‚  ?@™                       ¤  Аљ    5 †   џ‚  ¤  Аљ    5 ‡    џ‚  aљ› Ањ А™ 1                        ¤  Аљ    5 Љ   џ‚  aљ› Аq ќ               Ю   Ю 5 ’    џ‚  h               i¤   ЂR  џр   Ђ5 Љ   џ‚  ¤   ЂR  џрY   Ђы  +. ы *,    Ђы Mє   ' ¤   p@MH	   ы Ma
+   0a
+   ы Mф
+   © 0Ђ   ¤   Р@MP   M1   ¤ HБ0Ј   ¤   `AMЗ   ©  0ў   © Ю ы o 0®   ‚  ¤   p@MH	   ЊF 0a
+   ы Mф
+   ©  0Ђ   ¤   Р@MP   M1   ¤ HБ0Ј   ¤   `AMЗ   © 0ў   ©  Ю ы o ы M   s0®   ‚    Ђћqџ    p@\]^  Р@_`abЎHБd7  `A9ўgcHБef                                                                                                               	   њ© Ю  ы o  ы © ¤ А¤  Ајµ    џ ы o  o јY	   џы o  ¤  , ЂЊ Њ~яЊ   Њ џ ји
+   џ ы o ы © ¤ А¤  Ајµ    џ ы o o јY	   џы o ¤  , ЂЊ Њ’яЊ   ЊЭяџ ји
+   џ 5 ’   џы MR   
+     ы ы M™   0$   o ы M   s0 ®   ы  	 ы  Ж  Ж  ы MИ   јо   џM Ї   Щ   	   
+ јз   џы Me    0 ¤"   BMФ#   ++ ы
+ ©  0У$   ы M$   o% ј&   џы M$   o' ј&   џ o( o) јУ*   џ ј:+   џЮ
+ ы
+ o, 0є-   ы
+ 0<.   ы
+ ы
+ 0±/   ы
+ 0$   ‚  0Јa¤ҐА¦А§Ё©u	 , ЂЄ«¬А­А®h[      рЇefg°;±KЏ   BІіґµ¶{®Gбz„?·ё№є»                                                                                                                                                                  	   U©   Ю   ы  ¤    @0 $   ы  o ј     џ ы  o ј     џ ы    ы  ј  ъ   џ ы   ( ¤    p@M  H	   ЊF 0 a
+   ы  M  ф
+   ©  0 Ђ   ¤    Р@M  P   M  1   ¤ HБ0 Ј   ¤    @M З   © 0 ў   ©   Ю  ы  o ы M   s0 ®   ы  M  e     ¤    p@M  Ф   + 
+ ы   © 0 У   ы    ы  ј  P   џ ‚  7   @Јј«•   p@\]^  Р@_`abcHБd9efgЏІіЅ                                                                                               K©   Ю   ы  ¤    @0 $   ы    ы  ј  ъ   џ ы   ( ¤    @@M  H   ЊF 0 a    ы  M  ф   ©  0 Ђ	   ¤ 
+    @M  P   M  1
+   ¤ <аА0 Ј   ¤    @M З   © 0 ў   ©   Ю  ы  o ы M   s0 ®   ы  M  e     ¤    @@M  Ф   + 
+ ы  © 0 У   ы     ы   ј  P   џ ‚  7   @•   @@\]^   @_`abc<аАd9efgЏІіЅ                                                                                 '   УЈ   ¤     @M  $   o ј У   џ¤   P@MP    M1   ј#	   џ¤
+    @MH   ¤
+    @M є
+   јУ   џo јУ   џ¤    P@o	 ј     џ ¤   P@o
+ ј   џ¤	   P@M		?   o
+ ј		У   џ	¤
+   P@M
+
+?   M
+
+љ   ¤
+   PAo ј У   џ џ
+ o ј У   џo ј
+У   џ
+o јУ   џo јУ   џo јУ   џ¤    @o јУ   џЖ  Ж  Ж  Ж  Ж  Ж  R M
+e    o Њ ј У   џR G    ЂM
+e    ¤!    Bo" џ©  © ©  ©  ©  Mм#   Mм#   M 
+Ѓ$   я!      M"
+9%   G"    ЂM"
+e   "
+ o$& ј" У   џ"R" R$ ј"”'   џ"R" M"
+б(   G"
+     o$) ј" У   џ"R" R$ ј"”'   џ"R" M"
+Х*   G"
+     o$+ ј" У   џ"R" R$ ј"”'   џ"R" M"
+х,   G"
+     o$- ј" У   џ"R" R$ ј"”'   џ"R" А". " c/   Щ" !я" Ќ0   Щ" !я" ѓ1   Щ"  
+ я  " Ђ2   Щ"  
+ !яя  я           " …3   Щ" яяя 
+ яя    я 
+    я 
+ " Љ4   Щ"   я 
+ яя" ’5   Щ"  яяяяя   
+ я 
+     
+ я  я" †6   Щ" я" ‡7   M"Н8   А$9   ј""з:   џ"M"M;   А$<   ј""з:   џ"А"= А#> M$
+Њ?   Щ&
+ яяј$$з:   џ$M$ @   Щ& я    "  #  
+     яяя  я   яј$$з:   џ$M$ кA   Щ& я     яя   
+ яяј$$з:   џ$M$ЗB   Щ& я  яя   
+ яяј$$з:   џ$Б  ‚  C7   @
+·  P@_`ѕ    @їАWXБВ  PAГДЕЖs{ЗЏИЙ   BК|ЛМНОПРСТУ )1Yqh™Ф
+KХ
+
+ЦЧШЩ  	
+
+
+                                                                                                                                                                                                                                                                                                                                                        ·іRНЉЇ9™BФT:72PЗ«E№…w8М
