@@ -1,7 +1,7 @@
 {
-  "FontColor": "969696",
-  "MainColor": "10b981",
+  "FontColor": "10b981",
+  "MainColor": "DEDEDE",
   "AccentColor": "000000",
-  "BackgroundColor": "DEDEDE",
+  "BackgroundColor": "969696",
   "OutlineColor": "000000"
 }
