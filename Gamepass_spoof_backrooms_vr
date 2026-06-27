@@ -44,6 +44,6 @@ else
 end
 game.Players.LocalPlayer.OnTeleport:Connect(function(State)
     pcall(function()
-        queue_on_teleport(code .. [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Polinorsik/Scriptss/refs/heads/main/Gamepass_spoof_backrooms_vr"))()]])
+        queue_on_teleport(code .. [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Polinorsik/Scriptss/refs/heads/main/Gamepass_spoof_backrooms_vr"))()]]) -- i hate this part
     end)
 end)
