@@ -1,0 +1,49 @@
+local env = getgenv()
+local test = {
+    ["getnamecallmethod"] = {env.getnamecallmethod, 'getnamecallmethod'},
+    ["checkcaller"] = {env.checkcaller, 'checkcaller'},
+    ["hookmetamethod"] = {env.hookmetamethod, 'hookmetamethod'},
+    ["queue_on_teleport"] = {env.queue_on_teleport, 'queue_on_teleport'}
+}
+local sucs = {}
+for i, v in next, test do
+    if type(v[1]) == "function" then
+        sucs[v[2]] = true
+    end
+end
+local code = ""
+if not sucs[test["hookmetamethod"][2]] then return game.Players.LocalPlayer:Kick('hookmetamethod, is nil or not a function.') end
+if not sucs[test["getnamecallmethod"][2]] then return game.Players.LocalPlayer:Kick('getnamecallmethod, is nil or not a function.') end
+if not sucs[test["queue_on_teleport"][2]] then return game.Players.LocalPlayer:Kick('queue_on_teleport, is nil or not a function.') end
+if not sucs[test["checkcaller"][2]] then 
+    code = [[
+    local market = game:GetService("MarketplaceService")
+    local namecall = "UserOwnsGamePassAsync"
+    local hook
+    hook = hookmetamethod(game, "__namecall", function(self, ...)
+        local a = getnamecallmethod()
+        if self == market and a == namecall then
+            return true
+        end
+        return hook(self, ...)
+    end)
+    ]] 
+else 
+    code = [[
+    local market = game:GetService("MarketplaceService")
+    local namecall = "UserOwnsGamePassAsync"
+    local hook
+    hook = hookmetamethod(game, "__namecall", function(self, ...)
+        local a = getnamecallmethod()
+        if not checkcaller() and self == market and a == namecall then
+            return true
+        end
+        return hook(self, ...)
+    end)
+    ]] 
+end
+game.Players.LocalPlayer.OnTeleport:Connect(function(State)
+    pcall(function()
+        queue_on_teleport(code .. [[loadstring(game:HttpGet())()]])
+    end)
+end)
