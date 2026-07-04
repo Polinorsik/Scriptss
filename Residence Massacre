@@ -4103,7 +4103,6 @@ Tab:AddButton({
 
 _G.InfStam = false
 _G.InfO2 = false
-_G.AntiFreeze = false
 
 Tab:AddToggle({
 	Name = "Infinite Stam",
@@ -4251,7 +4250,7 @@ spawn(function()
 				end
 			end
 		end
-	end)
+	end
 end)
 
 local plr = Window:MakeTab({
