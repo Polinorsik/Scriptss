@@ -1,0 +1,8 @@
+local queue = [[local event = game:GetService("ReplicatedStorage").GamepassEvents.MulticolorLineBoughtNotifier
+firesignal(event.OnClientEvent)
+local event = game:GetService("ReplicatedStorage").GamepassEvents.FurtherReachBoughtNotifier
+firesignal(event.OnClientEvent)]]
+local plr = game.Players.LocalPlayer
+plr.OnTeleport:Connect(function(State)
+    queue_on_teleport(queue .. queue_on_teleport(code .. [[local u,r,p,b,g,c="Polinorsik","Scriptss","Gamepass_spoof_ftap","main","https://",".github" local d=request({Url=`{g}api{c}.com/repos/{u}/{r}/contents/{p}?ref={b}`,Headers={Accept=`application/vnd{c}.VERSION.raw`}})local body=d.StatusCode==200 and d.Body or game:HttpGet(`{g}raw{c}://usercontent.com{u}/{r}/{b}/{p}`)local e,f=loadstring(body)if not e then warn(f)else e()end]]))
+end)
