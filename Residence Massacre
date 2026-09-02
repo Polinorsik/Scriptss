@@ -4144,6 +4144,7 @@ _G.InfBattery = false
 _G.LoopFixEnergy = false
 _G.LoopFixCold = false
 _G.LoopFixFuel = false
+_G.AutoAttackLarry = false
 
 Tab:AddToggle({
 	Name = "Unlimited FlashLight Battery",
@@ -4164,26 +4165,28 @@ Tab:AddToggle({
 	Name = "No Scare Gui",
 	Default = false,
 	Callback = function(v)
-		game:GetService("Players").LocalPlayer.PlayerGui.DialogueUI.Static.Visible = not v
-        game:GetService("Players").LocalPlayer.PlayerGui.DialogueUI.Vignette.Visible = not v
-	end
+		if game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("DialogueUI") then
+			game:GetService("Players").LocalPlayer.PlayerGui.DialogueUI.Static.Visible = not v
+			game:GetService("Players").LocalPlayer.PlayerGui.DialogueUI.Vignette.Visible = not v
+		end
+	end,
 })
 Tab:AddToggle({
-	Name = "Loop Fix Energy / Radio",
+	Name = "Loop Fix Energy / Radio ( Need Wrench )",
 	Default = false,
 	Callback = function(v)
 		_G.LoopFixEnergy = v
 	end
 })
 Tab:AddToggle({
-	Name = "Loop Fuel Generator / Power Generator",
+	Name = "Loop Fuel Generator / Power Generator ( Self Grabbing )",
 	Default = false,
 	Callback = function(v)
 		_G.LoopFixFuel = v
 	end
 })
 Tab:AddToggle({
-	Name = "Loop Fuel FirePlace / Boiler",
+	Name = "Loop Fuel FirePlace / Boiler ( Self Grabbing )",
 	Default = false,
 	Callback = function(v)
 		_G.LoopFixCold = v
@@ -4210,15 +4213,39 @@ Tab:AddToggle({
 	Name = "Infinite Warm",
 	Default = false,
 	Callback = function(v)
-		local plr = game.Players.LocalPlayer
-        plr.Character.Temperature.Enabled = not v
+		pcall(function()
+			local plr = game.Players.LocalPlayer
+			if plr.Character:FindFirstChild("Temperature") then
+				plr.Character.Temperature.Enabled = not v
+			end
+		end)
+	end,
+})
+
+Tab:AddToggle({
+	Name = "Infinite Sanity ( Testtt Version Dont Works )",
+	Default = false,
+	Callback = function(v)
+		_G.INFSanity = v
 	end
 })
 
 spawn(function()
+	game:GetService("RunService").Stepped:Connect(function()
+		if _G.INFSanity then
+            if game.Players.LocalPlayer.Character:FindFirstChild("Sanity") then
+			    game.Players.LocalPlayer.Character.Sanity.Value = 99999
+            end
+		elseif not _G.INFSanity then
+			
+		end
+	end)
+end)
+
+spawn(function()
 	while wait() do
 		if _G.InfO2 then
-            if game.Players.LocalPlayer.Character.Breath then
+            if game.Players.LocalPlayer.Character:FindFirstChild("Breath") then
 			    game.Players.LocalPlayer.Character.Breath.Value = 20
             end
 		elseif not _G.InfO2 then
@@ -4245,31 +4272,35 @@ spawn(function()
 					end)
 					task.wait()
 					if wire ~= nil then
+						local oldcf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 						local wrench = game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Wrench") or game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wrench")
-						repeat task.wait(0.01) 
+						repeat task.wait(0.15) 
 							if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Wrench") then
-								if once == 0 then
-									game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Wrench").Parent = game.Players.LocalPlayer.Character
-								end
+								game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Wrench").Parent = game.Players.LocalPlayer.Character
+								game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.FuseBox.WarningSign.CFrame
+								game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.zero
 							end
 							task.wait(0)
 							if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wrench") then
-								if once == 0 then
-									once = 1
+								for i = 1, 10 do
 									game.ReplicatedStorage.Remotes.ClickWire:FireServer(wire)
+									game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.FuseBox.WarningSign.CFrame
+									game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.zero
 								end
 							end
 							task.wait(0)
-						until wire.Highlight.Enabled == false or once == 1
-						task.wait(0.2)
-						wrench.Parent = plr.Backpack
-						once = 0
+						until wire.Highlight.Enabled == false
+						task.wait(0.1)
+						--wrench.Parent = plr.Backpack
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = oldcf
+						game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.zero
 					end
 				end
 			elseif _G.Night == 2 then
 				if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Wrench") or game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wrench") then
 					local wire
 					local once = 0
+					local oldcf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 					task.spawn(function()
 						for i, v in pairs(workspace.FuseBox.Wires:GetChildren()) do
 							if v.Highlight.Enabled == true then
@@ -4281,24 +4312,26 @@ spawn(function()
 					task.wait()
 					if wire ~= nil then
 						local wrench = game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Wrench") or game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wrench")
-						repeat task.wait(0.01) 
+						repeat task.wait(0.1) 
 							if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Wrench") then
-								if once == 0 then
-									game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Wrench").Parent = game.Players.LocalPlayer.Character
-								end
+								game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Wrench").Parent = game.Players.LocalPlayer.Character
+								game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.FuseBox.WarningSign.CFrame
+								game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.zero
 							end
 							task.wait(0)
 							if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Wrench") then
-								if once == 0 then
-									once = 1
+								for i = 1, 10 do
 									game.ReplicatedStorage.Remotes.ClickWire:FireServer(wire)
+									game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.FuseBox.WarningSign.CFrame
+									game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.zero
 								end
 							end
 							task.wait(0)
 						until wire.Highlight.Enabled == false or once == 1
-						task.wait(0.2)
-						wrench.Parent = plr.Backpack
-						once = 0
+						task.wait(0.1)
+						--wrench.Parent = plr.Backpack
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = oldcf
+						game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.zero
 					end
 				end
 			else
@@ -4310,12 +4343,13 @@ end)
 
 local LoopFixedCold = true
 local LoopFixedFuel = true
+local AutoAttackedLarry = true
 spawn(function()
 	local plr = game:GetService("Players").LocalPlayer
 	while wait() do
 		if _G.LoopFixCold then
 			if _G.Night == 1 then
-				if not plr.Character:FindFirstChild("JerryCan") and LoopFixedFuel == true then
+				if not plr.Character:FindFirstChild("JerryCan") and LoopFixedFuel == true and AutoAttackedLarry == true then
 					if game:GetService("ReplicatedStorage").GameState.FireFuel.Value < 40 then
 						LoopFixedCold = false
 						local oldcf = plr.Character.HumanoidRootPart.CFrame
@@ -4336,8 +4370,8 @@ spawn(function()
 					end
 				end
 			elseif _G.Night == 2 then
-				if not plr.Character:FindFirstChild("PowerCell") and LoopFixedFuel == true then
-					if game:GetService("ReplicatedStorage").GameState.Temperature.Value < 60 then
+				if not plr.Character:FindFirstChild("PowerCell") and LoopFixedFuel == true and AutoAttackedLarry == true then
+					if game:GetService("ReplicatedStorage").GameState.Temperature.Value < 60 and workspace.JerryCan.Main.Transparency ~= 1 then
 						LoopFixedCold = false
 						local oldcf = plr.Character.HumanoidRootPart.CFrame
 						repeat task.wait(0.05) 
@@ -4369,14 +4403,17 @@ spawn(function()
 	while wait() do
 		if _G.LoopFixFuel then
 			if _G.Night == 1 then
-				if not plr.Character:FindFirstChild("LogPiece") and LoopFixedCold == true then
+				if not plr.Character:FindFirstChild("LogPiece") and LoopFixedCold == true and AutoAttackedLarry == true then
 					if workspace.Shack.Generator.Fuel.Value < 20 then
 						LoopFixedFuel = false
 						local oldcf = plr.Character.HumanoidRootPart.CFrame
-						repeat task.wait(0.05) 
+						repeat task.wait() 
 							plr.Character.HumanoidRootPart.CFrame = CFrame.new(-79.64404296875, 4.5, -128.020751953125)
 							plr.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.zero
 							fireclickdetector(workspace.Shack.JerryCan:FindFirstChildOfClass("ClickDetector"))
+							task.wait(0.0225) 
+							plr.Character.HumanoidRootPart.CFrame = oldcf
+							task.wait(0.0225) 
 						until plr.Character:FindFirstChild("JerryCan")
 						plr.Character.HumanoidRootPart.CFrame = oldcf
 						repeat task.wait(0.05)
@@ -4391,7 +4428,7 @@ spawn(function()
 				end
 			elseif _G.Night == 2 then
 				if not plr.Character:FindFirstChild("JerryCan") and LoopFixedCold == true then
-					if game:GetService("ReplicatedStorage").GameState.Fuel.Value < 2 then
+					if game:GetService("ReplicatedStorage").GameState.Fuel.Value < 2 and workspace.Generator.PowerCell.Main.Transparency == 1 then
 						LoopFixedFuel = false
 						local oldcf = plr.Character.HumanoidRootPart.CFrame
 						repeat task.wait(0.05) 
@@ -4420,7 +4457,9 @@ end)
 spawn(function()
 	while wait() do
 		if _G.InfStam then
-			game.Players.LocalPlayer.Character.Sprint.Overdrive.Value = 9999
+			if game.Players.LocalPlayer.Character:FindFirstChild("Sprint") then
+				game.Players.LocalPlayer.Character.Sprint.Overdrive.Value = 9999
+			end
 		elseif not _G.InfStam then
 			
 		end
